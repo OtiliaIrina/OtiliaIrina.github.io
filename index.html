@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Otilia Manasoiu — Astrophysics PhD Student</title>
+  <meta name="description" content="Otilia Manasoiu — PhD student in Astrophysics. Observational cosmology, large-scale structure, DESI survey." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,#071228 0%, #071122 100%);}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    .nav-links{display:flex;gap:14px}
+    .search{display:flex;align-items:center;gap:8px}
+    input[type="search"]{background:var(--glass);border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;color:var(--muted)}
+    header{margin-top:28px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:22px;border-radius:14px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:center}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    ul.clean{padding-left:18px;margin:10px 0}
+    .meta{font-size:13px;color:var(--muted)}
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.nav-links{display:none}.logo{width:40px;height:40px}}
+    .back{display:inline-block;margin-right:8px;font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="logo">OM</div>
+        <div>
+          <div style="font-weight:600">Otilia Manasoiu, PhD Student</div>
+          <div class="meta">Astrophysics Research Group — Cosmology</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="nav-links">
+          <a href="#study">Study</a>
+          <a href="#research">Research</a>
+          <a href="#engage">Engage</a>
+          <a href="#about">About</a>
+        </div>
+        <form class="search" onsubmit="event.preventDefault();document.getElementById('search-results').innerText='Search not implemented in this static demo.'">
+          <input type="search" placeholder="Search term (optional)" aria-label="Search" />
+        </form>
+      </div>
+    </nav>
+
+    <header>
+      <div class="hero">
+        <div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div>
+              <h1>Astrophysics Research Group</h1>
+              <p class="lead">Research Group: <strong>Cosmology</strong></p>
+            </div>
+            <div style="text-align:right;color:var(--muted)">
+              <div class="meta">1st Supervisor: <strong>Prof. Benjamin Joachimi</strong></div>
+              <div class="meta" style="margin-top:6px">Location: University (replace with your affiliation)</div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px" class="card">
+            <h3 style="margin-top:0">Research Interests</h3>
+            <ul class="clean">
+              <li>Observational Cosmology</li>
+              <li>Large-Scale Structure of the Universe</li>
+              <li>DESI Survey</li>
+            </ul>
+            <div id="search-results" class="meta"></div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <div style="font-weight:600;margin-bottom:8px">Quick links</div>
+            <ol style="margin:0;padding-left:16px;color:var(--muted)">
+              <li><a href="#study">Study</a></li>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#engage">Engage</a></li>
+              <li><a href="#about">About</a></li>
+            </ol>
+
+            <div style="margin-top:14px">
+              <a href="#" class="back">← Navigate back to homepage</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <div style="font-size:13px;color:var(--muted)">Contact</div>
+            <div style="margin-top:8px">Email: <em>replace-with-your-email@example.com</em></div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main style="margin-top:18px">
+      <section id="study" class="card">
+        <h3 style="margin-top:0">Study</h3>
+        <p class="meta">Details about coursework, teaching, and academic background can go here.</p>
+      </section>
+
+      <section id="research" class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">Research</h3>
+        <p class="meta">Short summaries, publications, datasets (DESI) and code links can be listed here.</p>
+      </section>
+
+      <section id="engage" class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">Engage</h3>
+        <p class="meta">Talks, outreach, and collaboration notes.</p>
+      </section>
+
+      <section id="about" class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">About</h3>
+        <p class="meta">A short bio, ORCID, and links to social / institutional profile.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div>Built with a simple static template. Replace contact details and affiliation in the HTML.</div>
+    </footer>
+  </div>
+</body>
+</html>
