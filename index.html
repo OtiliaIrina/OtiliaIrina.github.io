@@ -1,69 +1,182 @@
-<!DOCTYPE HTML>
-<!-- Strata by HTML5 UP | html5up.net | License: html5up.net/license -->
-<html>
-	<head>
-		<title>Otilia Manasoiu</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Otilia Irina — PhD researcher in cosmology working on the Lyman-alpha forest, DESI, analytical covariances, and forecasting." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Otilia Irina | Cosmology</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div id="shooting-stars" aria-hidden="true"></div>
 
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<a href="#" class="image avatar"><img src="assets/images/avatar.jpg" alt="profile" /></a>
-				<h1><strong>Otilia Manasoiu</strong><br />
-				PhD Student in Astrophysics<br />
-				University College London</h1>
-			</div>
-		</header>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Home">OI<span class="brand-dot">.</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Open navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-		<!-- Main -->
-		<div id="main">
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PhD researcher · precision cosmology</p>
+        <h1>Hi, I’m <span>Otilia Irina</span>.</h1>
+        <p class="hero-text">
+          I study the large-scale structure of the Universe using the Lyman-α forest,
+          with a focus on DESI, analytical covariance matrices, and cosmological forecasts.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#research">Explore my research</a>
+          <a class="button button-ghost" href="https://github.com/OtiliaIrina" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
 
-			<section id="intro">
-				<h2>About Me</h2>
-				<p>I am a PhD student in the Astrophysics Research Group at UCL, supervised by Prof. Benjamin Joachimi. My research focuses on cosmology and the large-scale structure of the Universe, and I am involved in the DESI survey.</p>
-			</section>
+      <div class="orbit-card reveal" aria-label="Research themes">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="planet planet-main">Lyα</div>
+        <span class="satellite satellite-one">DESI</span>
+        <span class="satellite satellite-two">2D FFTLog</span>
+        <span class="satellite satellite-three">Forecasts</span>
+      </div>
 
-			<section id="research">
-				<h2>Research</h2>
-				<p>My work involves observational cosmology, cosmological inference, and analysis of large-scale structure datasets, particularly within the <strong>DESI (Dark Energy Spectroscopic Instrument)</strong> collaboration.</p>
-			</section>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
 
-			<section id="interests">
-				<h2>Research Interests</h2>
-				<ul>
-					<li>Observational Cosmology</li>
-					<li>Large-Scale Structure of the Universe</li>
-					<li>DESI Survey</li>
-				</ul>
-			</section>
+    <section id="about" class="content-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>Turning cosmic structure into precise measurements.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I am a PhD researcher at University College London working in observational
+            cosmology. My research connects theory, statistical inference, and survey data
+            to understand how well high-redshift tracers can constrain the expansion and
+            growth of the Universe.
+          </p>
+          <p>
+            A central part of my work is developing an analytical covariance model for
+            the three-dimensional Lyman-α forest correlation function and using it in
+            forecasting pipelines for future DESI analyses.
+          </p>
+        </div>
+        <div class="facts reveal">
+          <div><span>Based at</span><strong>UCL</strong></div>
+          <div><span>Collaboration</span><strong>DESI</strong></div>
+          <div><span>Main probe</span><strong>Lyman-α forest</strong></div>
+          <div><span>Tools</span><strong>Python · Vega · FFTLog</strong></div>
+        </div>
+      </div>
+    </section>
 
-			<section id="contact">
-				<h2>Contact</h2>
-				<p>Email: <strong>otilia.manasoiu.25@ucl.ac.uk</strong></p>
-			</section>
+    <section id="research" class="content-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Research</p>
+        <h2>What I work on</h2>
+      </div>
+      <div class="card-grid">
+        <article class="research-card reveal">
+          <span class="card-index">01</span>
+          <h3>Analytical covariance</h3>
+          <p>
+            Building a real-space covariance matrix for the Lyman-α forest from Fourier-space
+            signal, aliasing, and noise contributions.
+          </p>
+        </article>
+        <article class="research-card reveal">
+          <span class="card-index">02</span>
+          <h3>Cosmological forecasting</h3>
+          <p>
+            Translating survey design and tracer properties into expected constraints using
+            Fisher information and realistic covariance models.
+          </p>
+        </article>
+        <article class="research-card reveal">
+          <span class="card-index">03</span>
+          <h3>DESI Lyman-α analyses</h3>
+          <p>
+            Studying three-dimensional clustering, full-shape information, fiducial cosmology
+            validation, and future high-redshift samples.
+          </p>
+        </article>
+      </div>
+    </section>
 
-		</div>
+    <section id="projects" class="content-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="project-list">
+        <article class="project reveal">
+          <div class="project-meta">Current project</div>
+          <div>
+            <h3>Analytical Lyman-α covariance</h3>
+            <p>
+              A 2D FFTLog-based framework that propagates an anisotropic power-spectrum
+              covariance into the binned real-space correlation function.
+            </p>
+          </div>
+          <span class="project-arrow">↗</span>
+        </article>
+        <article class="project reveal">
+          <div class="project-meta">Validation</div>
+          <div>
+            <h3>Numerical versus analytical covariance</h3>
+            <p>
+              Comparing mock-based, subsampling, and analytical estimates to identify the
+              scales and assumptions that control forecast accuracy.
+            </p>
+          </div>
+          <span class="project-arrow">↗</span>
+        </article>
+        <article class="project reveal">
+          <div class="project-meta">Looking ahead</div>
+          <div>
+            <h3>High-redshift forecast programme</h3>
+            <p>
+              Exploring Lyα, quasars, LBGs, and LAEs for DESI and future survey scenarios,
+              including auto- and cross-correlation information.
+            </p>
+          </div>
+          <span class="project-arrow">↗</span>
+        </article>
+      </div>
+    </section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-				<p>&copy; Otilia Manasoiu. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</div>
-		</footer>
+    <section id="contact" class="contact-section section-shell reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s talk about cosmology.</h2>
+      <p>
+        For research discussions, collaborations, or questions about my work, the best place
+        to start is my GitHub profile.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://github.com/OtiliaIrina" target="_blank" rel="noreferrer">Visit GitHub ↗</a>
+        <a class="button button-ghost" href="#home">Back to top ↑</a>
+      </div>
+    </section>
+  </main>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+  <footer class="site-footer section-shell">
+    <span>© <span id="year"></span> Otilia Irina</span>
+    <span>Built among the stars.</span>
+  </footer>
 
-	</body>
+  <script src="stars.js"></script>
+</body>
 </html>
