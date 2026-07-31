@@ -1,182 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Otilia Irina — PhD researcher in cosmology working on the Lyman-alpha forest, DESI, analytical covariances, and forecasting." />
-  <meta name="theme-color" content="#07111f" />
-  <title>Otilia Irina | Cosmology</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Otilia Manasoiu is a PhD researcher working on Lyman-alpha forest cosmology, covariance modelling and DESI forecasts.">
+  <meta name="theme-color" content="#050611">
+  <title>Otilia Manasoiu — Cosmology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <div id="shooting-stars" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Home">OI<span class="brand-dot">.</span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only">Open navigation</span>
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">PhD researcher · precision cosmology</p>
-        <h1>Hi, I’m <span>Otilia Irina</span>.</h1>
-        <p class="hero-text">
-          I study the large-scale structure of the Universe using the Lyman-α forest,
-          with a focus on DESI, analytical covariance matrices, and cosmological forecasts.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#research">Explore my research</a>
-          <a class="button button-ghost" href="https://github.com/OtiliaIrina" target="_blank" rel="noreferrer">GitHub ↗</a>
-        </div>
-      </div>
-
-      <div class="orbit-card reveal" aria-label="Research themes">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="planet planet-main">Lyα</div>
-        <span class="satellite satellite-one">DESI</span>
-        <span class="satellite satellite-two">2D FFTLog</span>
-        <span class="satellite satellite-three">Forecasts</span>
-      </div>
-
-      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
-        <span></span>
-      </a>
-    </section>
-
-    <section id="about" class="content-section section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">About</p>
-        <h2>Turning cosmic structure into precise measurements.</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p>
-            I am a PhD researcher at University College London working in observational
-            cosmology. My research connects theory, statistical inference, and survey data
-            to understand how well high-redshift tracers can constrain the expansion and
-            growth of the Universe.
-          </p>
-          <p>
-            A central part of my work is developing an analytical covariance model for
-            the three-dimensional Lyman-α forest correlation function and using it in
-            forecasting pipelines for future DESI analyses.
-          </p>
-        </div>
-        <div class="facts reveal">
-          <div><span>Based at</span><strong>UCL</strong></div>
-          <div><span>Collaboration</span><strong>DESI</strong></div>
-          <div><span>Main probe</span><strong>Lyman-α forest</strong></div>
-          <div><span>Tools</span><strong>Python · Vega · FFTLog</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="content-section section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Research</p>
-        <h2>What I work on</h2>
-      </div>
-      <div class="card-grid">
-        <article class="research-card reveal">
-          <span class="card-index">01</span>
-          <h3>Analytical covariance</h3>
-          <p>
-            Building a real-space covariance matrix for the Lyman-α forest from Fourier-space
-            signal, aliasing, and noise contributions.
-          </p>
-        </article>
-        <article class="research-card reveal">
-          <span class="card-index">02</span>
-          <h3>Cosmological forecasting</h3>
-          <p>
-            Translating survey design and tracer properties into expected constraints using
-            Fisher information and realistic covariance models.
-          </p>
-        </article>
-        <article class="research-card reveal">
-          <span class="card-index">03</span>
-          <h3>DESI Lyman-α analyses</h3>
-          <p>
-            Studying three-dimensional clustering, full-shape information, fiducial cosmology
-            validation, and future high-redshift samples.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="content-section section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects</h2>
-      </div>
-      <div class="project-list">
-        <article class="project reveal">
-          <div class="project-meta">Current project</div>
-          <div>
-            <h3>Analytical Lyman-α covariance</h3>
-            <p>
-              A 2D FFTLog-based framework that propagates an anisotropic power-spectrum
-              covariance into the binned real-space correlation function.
-            </p>
-          </div>
-          <span class="project-arrow">↗</span>
-        </article>
-        <article class="project reveal">
-          <div class="project-meta">Validation</div>
-          <div>
-            <h3>Numerical versus analytical covariance</h3>
-            <p>
-              Comparing mock-based, subsampling, and analytical estimates to identify the
-              scales and assumptions that control forecast accuracy.
-            </p>
-          </div>
-          <span class="project-arrow">↗</span>
-        </article>
-        <article class="project reveal">
-          <div class="project-meta">Looking ahead</div>
-          <div>
-            <h3>High-redshift forecast programme</h3>
-            <p>
-              Exploring Lyα, quasars, LBGs, and LAEs for DESI and future survey scenarios,
-              including auto- and cross-correlation information.
-            </p>
-          </div>
-          <span class="project-arrow">↗</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section section-shell reveal">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s talk about cosmology.</h2>
-      <p>
-        For research discussions, collaborations, or questions about my work, the best place
-        to start is my GitHub profile.
-      </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="https://github.com/OtiliaIrina" target="_blank" rel="noreferrer">Visit GitHub ↗</a>
-        <a class="button button-ghost" href="#home">Back to top ↑</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-shell">
-    <span>© <span id="year"></span> Otilia Irina</span>
-    <span>Built among the stars.</span>
-  </footer>
-
-  <script src="stars.js"></script>
-</body>
-</html>
+<a class="skip-link" href="#main">Skip to content</a>
+<canvas id="global-starfield" aria-hidden="true"></canvas>
+<header class="cosmos"><canvas id="starfield" aria-hidden="true"></canvas>
+<div class="nav-wrap"><nav class="nav" aria-label="Primary"><a class="brand" href="index.html">Otilia Manasoiu</a><button class="menu-button" aria-expanded="false" aria-label="Open menu">☰</button><div class="nav-links">
+<a href="about.html">about</a>
+<a href="publications.html">publications</a>
+<a href="code.html">code</a>
+<a href="talks.html">talks</a>
+<a href="cv.html">cv</a>
+</div></nav></div>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Cosmology · Lyman-α forest · DESI</p>
+    <h1>Otilia<br>Manasoiu</h1>
+    <p class="lead">PhD researcher at University College London, developing analytical methods to understand the covariance of three-dimensional Lyman-α forest clustering and forecast the cosmological reach of future surveys.</p>
+    <div class="hero-actions"><a class="button primary" href="publications.html">Explore research</a><a class="button" href="https://github.com/OtiliaIrina" target="_blank" rel="noreferrer">View GitHub ↗</a></div>
+  </div>
+  <aside class="hero-meta" aria-label="Research summary">
+    <strong>Based at</strong><p>Department of Physics & Astronomy<br>University College London</p>
+    <strong>Working on</strong><p>Analytical covariance matrices, 2D FFTLog, full-shape validation and high-redshift forecasting.</p>
+    <strong>Collaboration</strong><p>Dark Energy Spectroscopic Instrument (DESI)</p>
+  </aside>
+</section></header>
+<main id="main">
+<section class="section">
+  <p class="kicker">Research focus</p>
+  <h2>Turning a forest of absorption lines into a map of the Universe.</h2>
+  <p class="section-intro">The Lyman-α forest traces matter at redshifts that are difficult to reach with ordinary galaxy surveys. My work focuses on the statistical machinery needed to extract that information accurately and efficiently.</p>
+  <div class="grid">
+    <article class="card"><span class="card-index">01</span><h3>Analytical covariance</h3><p>Building a real-space covariance model for Lyman-α correlation functions from Fourier-space signal, aliasing and spectral-noise contributions.</p></article>
+    <article class="card"><span class="card-index">02</span><h3>2D FFTLog transforms</h3><p>Using multipole decompositions and two-dimensional FFTLog machinery to propagate anisotropic power-spectrum information into correlation-function space.</p></article>
+    <article class="card"><span class="card-index">03</span><h3>Forecasting DESI</h3><p>Studying what future Lyman-α, quasar and high-redshift tracer samples can teach us about cosmic expansion and structure growth.</p></article>
+  </div>
+</section>
+<section class="section narrow"><p class="kicker">Current direction</p><h2>From covariance modelling to cosmological forecasts.</h2><p class="section-intro">A reliable covariance matrix is the bridge between a theoretical signal and trustworthy parameter constraints. I am developing that bridge for the anisotropic three-dimensional Lyman-α forest.</p></section>
+</main>
+<footer><div class="footer-inner"><span>© <span data-year></span> Otilia Manasoiu</span><span><a href="https://github.com/OtiliaIrina" target="_blank" rel="noreferrer">GitHub</a> · Built as a lightweight static site.</span></div></footer>
+<script src="stars.js"></script>
+</body></html>
